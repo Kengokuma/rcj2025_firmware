@@ -16,7 +16,7 @@ MbedI2C myi2c(p12,p13);
 Adafruit_TCS34725 tcs = Adafruit_TCS34725(TCS34725_INTEGRATIONTIME_614MS, TCS34725_GAIN_1X);
 
 void setup(void) {
-  Serial.begin(9600);
+  Serial.begin(115200);
 
   if (tcs.begin(TCS34725_ADDRESS, &myi2c)) {
     Serial.println("Found sensor");

@@ -1,7 +1,7 @@
 #include <Arduino.h>
 #include "pio_encoder.h"
 
-PioEncoder encoder(10); // encoder is connected to GPIO10 and GPIO11
+PioEncoder encoder(16); // encoder is connected to GPIO10 and GPIO11
 
 void setup() {
   encoder.begin();
