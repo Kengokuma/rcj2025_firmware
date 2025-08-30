@@ -17,8 +17,8 @@ private:
   int dirPin_;
   int encPin_;
   int servoPin_;
-  static constexpr float Kp = 0.005;
-  static constexpr long target_angle = 200;
+  static constexpr float Kp = 0.002;
+  static constexpr long target_angle = 320;
   static constexpr int max_speed = 255;
 
   PioEncoder encoder_;
